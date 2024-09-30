@@ -1,0 +1,217 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+@font-face
+    font-family: "intel"
+    src: url("../fonts/intelone-mono-font-family-regular.otf")
+
+@font-face
+    font-family: "play"
+    src: url("../fonts/PlayfairDisplay-Regular.ttf")
+
+@font-face
+    font-family: "flame"
+    src: url("../fonts/Flame-Regular.otf")
+
+$accent: #7A2841
+$hover: #49202C
+$bgc: #F5EAD9
+
+body
+    background-color: $bgc
+    
+.container
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0px
+    padding-left: 15px
+    padding-right: 15px
+
+.btn
+    width: 157px
+    height: 52px
+    border-radius: 44px
+    border: 1px solid $accent
+    background-color: $bgc
+
+.title
+    font-size: 64px
+    color: $accent
+
+.text
+    font-family: "intel"
+    font-size: 20px
+    color: $accent
+
+.logo
+    color: $accent
+    font-family: "flame"
+    font-size: 28px
+
+.main-section
+    min-height: 1000px
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 85px
+    &__content-container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__img-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__title
+        color: $accent
+        font-family: "play"
+        font-size: 96px
+        text-align: center
+        margin-bottom: 80px
+    &__second-img
+        width: 720px
+        height: 720px
+        margin-bottom: 80px
+    &__first-img
+        position: relative
+        top: 200px
+        left: 200px
+        width: 300px
+        height: 300px
+    &__text
+        max-width: 960px
+        text-align: center
+        margin-bottom: 40px
+    &__btn
+        margin-bottom: 150px
+    &__btn-link
+        color: $accent
+        text-decoration: none
+        font-family: "intel"
+        font-size: 20px
+        &:hover
+            color: $hover
+            text-decoration: none
+
+.nav-text
+    color: $accent
+    font-family: "intel"
+    font-size: 20px
+    margin-right: 40px
+    &:hover
+        color: $hover
+
+.last-text
+    margin-right: 0px
+.nav
+    &__cart-container
+        display: flex
+        flex-direction: row
+
+.cart-container
+    &__img
+        margin-right: 20px
+        
+.last-img
+    margin-right: 0px     
+
+
+.four-section
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__content-container
+        display: flex
+        justify-content: center
+    &__grid-container
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-column-gap: 40px
+        grid-row-gap: 40px
+        margin-bottom: 150px
+    &__title
+        text-align: center
+        max-width: 839px
+        margin-bottom: 80px
+
+.product-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 290px
+    &__box
+        width: 250px
+        height: 250px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #FCF1E0
+        margin-bottom: 30px
+    &__img
+        max-width: 200px
+        min-height: 200px
+    &__name
+        margin-bottom: 15px
+    &__price
+        color: #D0B0AB
+    &__price-box
+        max-width: 290px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-column-gap: 120px
+    &__btn
+        border: none
+        background-color: $bgc
+.footer
+    &__first-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 30px
+    &__line
+        height: 1px
+        border-top: 2px solid #D7CCBB
+        margin-bottom: 26px
+    &__second-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    &__link
+        margin-right: 26px
+        &:last-child
+            margin-right: 0px
+    &__form
+        background-color: $bgc
+        border: 1px solid $accent
+        border-radius: 44px
+        width: 210px
+        height: 48px
+        margin-right: 10px
+        margin-bottom: 15px
+    &__btn
+        background-color: $accent
+        border: none
+        height: 48px
+        width: 78px
+        border-radius: 44px
+    &__second-text
+        position: relative
+        left: -70px
+    &__navbar
+        position: relative
+        left: 90px
+
+.email-box
+    display: flex
+    flex-direction: column
+    &__text
+        font-size: 14px
+        font-family: "intel"
+        color: $accent
+    
