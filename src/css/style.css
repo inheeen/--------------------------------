@@ -596,10 +596,10 @@ body {
 }
 
 .product-box__price-box {
-  max-width: 290px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 120px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .product-box__btn {
@@ -673,4 +673,42 @@ body {
   font-size: 14px;
   font-family: "intel";
   color: #7A2841;
+}
+
+.shopping__btn {
+  border: none;
+  background-color: #F5EAD9;
+}
+
+.smart-basket__min {
+  border: none;
+  background-color: #F5EAD9;
+}
+
+.smart-basket__min-icon {
+  width: 24px;
+}
+
+.smart-basket__min-count {
+  color: #49202C;
+}
+
+.smart-basket__form {
+  background-color: #F5EAD9;
+}
+
+.smart-basket__total-cost {
+  background-color: #F5EAD9;
+}
+
+.smart-basket__user-input {
+  background-color: #F5EAD9;
+}
+
+.product__quantity {
+  width: 100px;
+  margin-right: 30px;
+  margin-left: 30px;
+  border: 1px solid #7A2841;
+  border-radius: 40px;
 }

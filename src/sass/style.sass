@@ -159,13 +159,15 @@ body
     &__price
         color: #D0B0AB
     &__price-box
-        max-width: 290px
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
-        grid-column-gap: 120px
+        max-width: 250px
+        display: flex
+        flex-direction: row
+        align-items: center
     &__btn
         border: none
         background-color: $bgc
+
+        
 .footer
     &__first-wrapper
         display: flex
@@ -214,4 +216,33 @@ body
         font-size: 14px
         font-family: "intel"
         color: $accent
+    
+.shopping
+    &__btn
+        border: none
+        background-color: $bgc
+.smart-basket
+    &__min
+        border: none
+        background-color: $bgc
+    &__min-icon
+        width: 24px
+    &__min-count
+        color: $hover
+    &__form
+        background-color: $bgc
+    &__total-cost
+        background-color: $bgc
+    &__user-input
+        background-color: $bgc
+        
+
+    
+.product
+    &__quantity
+        width: 100px
+        margin-right: 30px
+        margin-left: 30px
+        border: 1px solid $accent
+        border-radius: 40px
     
