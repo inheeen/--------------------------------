@@ -845,4 +845,7 @@ body {
     width: 300px;
     height: 300px;
   }
+  .four-section__grid-container {
+    padding: 15px;
+  }
 }
